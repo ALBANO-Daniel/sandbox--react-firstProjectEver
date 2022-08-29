@@ -5,18 +5,18 @@ export default function NavigationMenuList(props) {
   return (
     <ul className="navigation-menu-list">
       <li>
-        <Link to="/sobre">Sobre</Link>
+        <Link to="/sobre">Home</Link>
       </li>
       <li>
-        <Link to="/produtos">Produtos</Link>
+        <Link to="/produtos">Products</Link>
       </li>
       <li>
         <Link to="/portfolio">Portfolio</Link>
       </li>
       <li>
         <Link to="/contato">
-          Contato
-          {props.count}
+          Contact
+          {/* {props.count} */}
         </Link>
       </li>
     </ul>
