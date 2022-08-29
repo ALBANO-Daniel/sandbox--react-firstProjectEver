@@ -4,7 +4,7 @@ import { MobileNavigationButton } from './MobileNavigationButton'
 import NavigationMenuList from './NavigationMenuList'
 
 export default function AppHeader() {
-  const [count, setCount] = React.useState(0)
+  // const [count, setCount] = React.useState(0)
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   const toggleMenuOpen = React.useCallback(() => setIsMenuOpen(!isMenuOpen), [isMenuOpen])
   return (
@@ -12,7 +12,7 @@ export default function AppHeader() {
       <div className="App-marca">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>React!</h2>
-        <button onClick={() => setCount(count + 1)}>Increase count</button>
+        {/* <button onClick={() => setCount(count + 1)}>Increase count</button> */}
       </div>
       <nav id="nav" className={isMenuOpen ? 'active' : ''}>
         <MobileNavigationButton onClick={toggleMenuOpen} />

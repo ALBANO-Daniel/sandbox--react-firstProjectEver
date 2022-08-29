@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
   buttonMobile: {
-    height: 1000,
+    height: 8,
   },
 })
 
