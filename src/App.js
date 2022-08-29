@@ -14,7 +14,7 @@ class App extends Component {
         <AppHeader />
         <Switch>
           <Route path="/about">
-            <div>about</div>
+            <div>about it</div>
           </Route>
           <Route path="/about/home">
             <div>home</div>
