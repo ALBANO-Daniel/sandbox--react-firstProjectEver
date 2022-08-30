@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 import './App.css'
 import AppHeader from './assets/components/AppHeader.jsx'
 import { Switch, Route } from 'react-router'
-import Footer from './assets/components/Footer'
+import Footer from './assets/components/footer/Footer'
 
 class App extends Component {
   render() {
@@ -13,16 +13,20 @@ class App extends Component {
       <div className="App">
         <AppHeader />
         <Switch>
-          <Route path="/about">
-            <div>about it</div>
+          <Route path="/">
+            <div>the home</div>
           </Route>
-          <Route path="/about/home">
-            <div>home</div>
+          <Route path="/products">
+            <div>Our Products</div>
+          </Route>
+          <Route path="/portfolio">
+            all portfolio
+          </Route>
+          <Route path="/about">
+            About Us!
           </Route>
         </Switch>
-        <Route path="/sobre">
-          <Footer />
-        </Route>
+        <Footer />
       </div>
     )
   }
