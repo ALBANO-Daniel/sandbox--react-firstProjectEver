@@ -13,9 +13,6 @@ class App extends Component {
       <div className="App">
         <AppHeader />
         <Switch>
-          <Route path="/">
-            <div>the home</div>
-          </Route>
           <Route path="/products">
             <div>Our Products</div>
           </Route>
@@ -24,6 +21,9 @@ class App extends Component {
           </Route>
           <Route path="/about">
             About Us!
+          </Route>
+          <Route path="/">
+            <div>the home</div>
           </Route>
         </Switch>
         <Footer />
